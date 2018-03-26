@@ -1,0 +1,163 @@
+﻿/**
+ * @author Christo, raducotofrei (27 October 2014)
+ * This file documents the basic API used in DJMusicApp to communicate with the server.
+ * The JSON representations of the objects are presented at the end of the file.
+ * The first paragraph shows an example of a command description
+ */
+
+
+/[command name (url)]
+=>	[sent JSON object]
+<=	[returned JSON object]
+
+
+/login
+=>	User
+<=	"confirmation"
+
+/logout
+=>	"user_id" : String
+<=	"confirmation"
+
+UPDATE
+/getRooms
+=>	"room_status" : Int {0 public, 1 private or 2 both}
+<=	"rooms" : Array[Room]
+	"confirmation" : String
+
+/getRoom
+=>	"room_id" : String
+<=	"room" : Room
+	"confirmation" : String
+
+UPDATE
+/addRoom
+=>	"user_id" : String
+	"room_name" : String
+	"room_genre" : String
+	"room_status" : Int {0 public, 1 private}
+	"password" : String (? only if room_status = 1)
+<=	"room_id" : String
+	"confirmation" : String
+
+/updateRoom
+=>	"user_id" : String
+	"room_id" : String
+	"room_name" : String
+	"room_genre" : String
+<=	"confirmation" : String
+
+/deleteRoom
+=>	"user_id" : String
+	"room_id" : String
+<=	"confirmation" : String
+
+/subscribeRoom
+=>	"user_id" : String
+	"room_id" : String
+	"password" : String (? if room is private)
+<=	"current_track" : Track
+	"is_admin" : {0: no, 1: yes}
+	"confirmation" : String
+
+/unSubscribeRoom
+=>	"user_id" : String 
+	"room_id" : String
+<=	"confirmation" : String
+
+NEW
+/unSubscribeAllRooms
+=>	"user_id" : String
+<=	"confirmation" : String
+
+/getUsers
+=>	"room_id" : String
+<=	"users" : Array[Users]
+	"confirmation" : String
+
+//DEPRECATED
+/getNextTrack
+=>	"room_id" : String
+<=	"track" : Track
+	"confirmation" : String
+
+//DEPRECATED
+/getCurrentTrack
+=>	"room_id" : String
+<=	"track" : Track (NA if not available)
+	"track_pos" : String
+	"next_track" : Track (NA if not available)
+	"confirmation" : String
+NEW
+/getCurrentAndNextTracks
+=>	"room_id" : String
+	"sync_mode" : {"true", "false"} (? optionnal)
+<=	"current_track_available" : Bool
+	"current_track" : Track (NA if not available)
+	"current_track_pos" : Long
+	"next_track_available" : Bool
+	"next_track" : Track (NA if not available)
+	"confirmation" : String
+
+UPDATE
+/getTracks
+=>	"room_id" : String
+	"user_id" : String
+<=	"tracks" : Array[Track]
+	"confirmation" : String
+
+/addTracks
+=>	"user_id" : String, 
+	"room_id" : String, 
+	"tracks" : Array[Track]
+<=	"confirmation" : String
+
+NEW
+/voteCurrentTrack
+=> 	"user_id" : String
+	"room_id" : String
+	"note" : {-1: downVote, 1: upVote}
+<=	"confirmation" : String
+	"info" : String (if skip track)
+
+NEW
+/skipTrack
+=>	"user_id" : String
+	"room_id : String
+<=	"confirmation" : String
+
+NEW
+/syncWithServer
+=>	null
+<=	"seconds_from_sync" : Int
+	"confirmation" : String
+
+
+/**
+ * JSON representation of the objects
+ */
+
+User
+"user_id" : String
+"user_name" : String
+
+
+Track
+"track_url" : String
+"track_title" : String
+"track_artist" : String
+"track_album" : String
+"track_genre" : String
+"track_length" : long
+
+UPDATE
+Room
+"room_name" : String
+"room_genre" : String
+"room_status" : {0: public, 1: private}
+"room_users" : List[User]
+"room_current_track_available" : Bool
+"room_current_track" : Track
+"room_current_track_pos" : long
+"room_next_track_available" : Bool
+"room_next_track" : Track

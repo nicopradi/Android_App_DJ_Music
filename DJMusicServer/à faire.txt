@@ -1,0 +1,32 @@
+[x] getRoom(s) => inclure prochaine track
+[x] getCurrentTrack quand pas de track (DEPRECATED, use getCurrentAndNextTrack)
+[x] getCurrentAndNextTrack renvoie également la prochaine track (NA si pas disponible)
+[x] addRoom => ajouter createdBy
+[x] ajouter listeningUsers dans rooms
+[?] totalUsers => 3 au lieu de 2 ??
+[x] nouvelle méthode "skipTrack(roomId)"
+[x] nouvelle méthode "voteCurrentTrack(roomId, {-1, 0, 1})"
+[ ] gérer les erreurs avec JSONManager
+[x] getTrack(shift = n), gérer le cas où on boucle plusieurs fois (ex une seule personne avec plusieurs chansons) 
+[x] ajouter des logs
+[ ] filtrer les contenus pour le nom de rooms
+[x] getCurrentAndNextTrack => current/next_track_available
+[ ] vérifier que les chansons sont bien dans l'ordre
+[0] implémenter GCM
+[x] update/delete room/skip track => check privileges
+[x] votes => add user_id
+[x] tables historique votes
+[x] gérer les trous de turnInRoom
+[x] private/public rooms
+[x] privileges for users
+[x] skip when too many downvotes
+[x] click every 10 secondes
+[x] syncWithServer => renvoie le nombre de millisecondes jusqu'au prochain sync
+[ ] case same song in different rooms with same user
+[x] sync getCANT choose if wait or not
+[-] créer une table avec les rooms vides et les vider toutes les 24h
+[ ] remplacer object_name by objectName
+[ ] manager life of objects in db
+[x] logs in lists html
+[ ] version de l'app dans les logs, user
+[x] changer php requete mettre ?, utilise requestWithVariables

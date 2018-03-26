@@ -1,0 +1,50 @@
+﻿#onglets
+{
+	position : absolute;
+	border : 1px solid transparent;
+	padding : 0;
+	font : 16px Calibri, arial, serif;
+	list-style-type : none;
+	left : 50%;
+	margin-top : 0;
+	margin-left : -550px; /* la moitié de width */
+	width : 900px;
+	border-radius : 5px;
+}
+
+#onglets li
+{
+    float : left;
+    height : 26px; /* à modifier suivant la taille de la police pour centrer le texte dans l'onglet */
+    background-color: #E6E6E6;
+    margin : 2px 2px 0 2px !important;  /* Pour les navigateurs autre que IE */
+    margin : 1px 2px 0 2px;  /* Pour IE  */
+    border : 1px solid #9EA0A1;
+	border-radius : 5px 5px 0px 0px;
+}
+
+#onglets li.active
+{
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+
+#onglets a
+{
+    display : block;
+    color : #666;
+    text-decoration : none;
+    padding : 4px;
+	border-radius : 5px 5px 0px 0px;
+}
+
+#onglets a:hover
+{
+    background : #fff;
+}
+
+#menu
+{
+    border-bottom : 1px solid #9EA0A1;
+    padding-bottom : 30px;
+}

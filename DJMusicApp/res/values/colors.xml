@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="action_bar_color">#3F4C6B</color><!-- F44336 ou 7CB342 -->
+    <color name="action_bar_text_color">#F2F2F2</color>
+
+    <!-- TEXTS -->
+    <color name="card_text_color">#222222</color>
+    <color name="card_text_color_light">#393939</color>
+
+    <!-- BACKGROUNDS -->
+    <color name="main_background_color">#EAEAEA</color>
+
+    <!-- BUTTON STATES -->
+    <!-- OLD <color name="custom_button_state_enabled_color">#7CB342</color>
+    <color name="custom_button_state_disabled_color">#DCEDC8</color>
+    <color name="custom_button_state_focused_color">#558B2F</color>
+    <color name="custom_button_state_pressed_color">#558B2F</color>-->
+    <color name="custom_button_state_enabled_color">#1D3368</color> <!-- EF5350 -->
+    <color name="custom_button_state_disabled_color">#FFCDD2</color>
+    <color name="custom_button_state_focused_color">#D32F2F</color>
+    <color name="custom_button_state_pressed_color">#E53935</color>
+
+</resources>

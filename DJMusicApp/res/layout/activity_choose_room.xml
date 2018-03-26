@@ -1,0 +1,234 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chooseRoomLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    android:orientation="vertical"
+    tools:context="ch.epfl.sweng.djmusicapptristan.ChooseRoomActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2ChooseRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/displayPublicCheckBoxChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/displayPublicCheckbox" />
+
+        <CheckBox
+            android:id="@+id/displayPrivateCheckBoxChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/displayPrivateCheckbox" />
+
+        <Spinner
+            android:id="@+id/spinnerSortChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:entries="@array/sortTypes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3ChooseRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBoxPopChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxPop" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRockChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxRock" />
+
+        <CheckBox
+            android:id="@+id/checkBoxClassicalChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxClassical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4ChooseRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBoxMetalChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxMetal" />
+
+        <CheckBox
+            android:id="@+id/checkBoxHouseChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxHouse" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTranseChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxTranse" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5ChooseRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBoxTechnoChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxTechno" />
+
+        <CheckBox
+            android:id="@+id/checkBoxElectroChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxElectro" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFolkChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxFolk" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6ChooseRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBoxJazzChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxJazz" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCountryChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxCountry" />
+
+        <CheckBox
+            android:id="@+id/checkBoxLatinoChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxLatino" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7ChooseRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBoxOthersChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxOthers" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAnythingChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxAnything" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAllChooseRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/checkBoxAll" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8ChooseRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/closeButtonChooseRoomActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClickCloseButton"
+            android:text="@string/closeButtonChooseRoomActivity" />
+    </LinearLayout>
+
+    <include layout="@layout/spinner_progress_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listViewChooseRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+</LinearLayout>

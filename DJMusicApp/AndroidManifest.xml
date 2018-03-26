@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ch.epfl.sweng.djmusicapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name=".activities.TargetActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_target"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".activities.RoomActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_room"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MusicActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_music"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.ChooseRoomActivity"
+            android:label="@string/title_activity_choose_room" >
+        </activity>
+        <activity
+            android:name=".activities.CreateRoomActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_create_room"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MusicHistoryActivity"
+            android:label="@string/title_activity_music_history" >
+        </activity>
+        <activity
+            android:name=".activities.SearchMusicActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_search_music"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SearchRoomActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_search_room"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SearchMusicTestActivity"
+            android:label="@string/title_activity_search_music_test" >
+        </activity>
+        <activity
+            android:name="ch.epfl.sweng.djmusicapp.activities.DummyAdminRoomActivity"
+            android:label="@string/title_activity_dummy_admin_room" >
+        </activity>
+        <activity
+            android:name="ch.epfl.sweng.djmusicapp.activities.PlayYourTrackActivity"
+            android:label="@string/title_activity_play_your_track" >
+        </activity>
+        <activity
+            android:name="ch.epfl.sweng.djmusicapp.activities.DisplayMusicActivity"
+            android:label="@string/title_activity_display_music" >
+        </activity>
+        <activity
+            android:name="ch.epfl.sweng.djmusicapp.activities.ChangeTrackPropertiesActivity"
+            android:label="@string/title_activity_change_track_properties" >
+        </activity>
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="our tests label"
+        android:targetPackage="ch.epfl.sweng.djmusicapp" />
+
+</manifest>

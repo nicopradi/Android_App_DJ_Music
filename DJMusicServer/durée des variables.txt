@@ -1,0 +1,15 @@
+-room : 
+  Si il n'y a personne dans la room pendant plus de 24h, elle est supprimée.
+
+-track : 
+  Une fois la chanson joué, si elle a suffisament de votes positifs, alors elle est gardée, sinon elle est jetée
+  Si une track est supprimée, les votes correspondants sont aussi supprimés
+
+-playlist : 
+  Si le user s'unsubscribe, alors la playlist est supprimée
+
+-user : 
+  Si le user se délogue
+
+-userInRoom
+  Si le user s'unsubscribe

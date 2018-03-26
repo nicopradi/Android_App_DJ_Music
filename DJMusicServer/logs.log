@@ -1,0 +1,98 @@
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : SELECT COUNT(*) as nb_rooms FROM djmusic_rooms WHERE status = 1
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : SELECT * FROM djmusic_rooms WHERE status = 1
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT usersinrooms.*, users.*
+			FROM djmusic_usersinrooms usersinrooms
+			INNER JOIN djmusic_users users ON usersinrooms.userId = users.user_id
+			WHERE usersinrooms.roomId=17
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : SELECT totalUsers FROM djmusic_rooms WHERE id='17'
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=17 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 0, totalUsers) FROM djmusic_rooms WHERE id='17')
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=17 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 1, totalUsers) FROM djmusic_rooms WHERE id='17')
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT usersinrooms.*, users.*
+			FROM djmusic_usersinrooms usersinrooms
+			INNER JOIN djmusic_users users ON usersinrooms.userId = users.user_id
+			WHERE usersinrooms.roomId=18
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : SELECT totalUsers FROM djmusic_rooms WHERE id='18'
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=18 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 0, totalUsers) FROM djmusic_rooms WHERE id='18')
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=18 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 1, totalUsers) FROM djmusic_rooms WHERE id='18')
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT usersinrooms.*, users.*
+			FROM djmusic_usersinrooms usersinrooms
+			INNER JOIN djmusic_users users ON usersinrooms.userId = users.user_id
+			WHERE usersinrooms.roomId=19
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : SELECT totalUsers FROM djmusic_rooms WHERE id='19'
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=19 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 0, totalUsers) FROM djmusic_rooms WHERE id='19')
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=19 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 1, totalUsers) FROM djmusic_rooms WHERE id='19')
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT usersinrooms.*, users.*
+			FROM djmusic_usersinrooms usersinrooms
+			INNER JOIN djmusic_users users ON usersinrooms.userId = users.user_id
+			WHERE usersinrooms.roomId=21
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : SELECT totalUsers FROM djmusic_rooms WHERE id='21'
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=21 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 0, totalUsers) FROM djmusic_rooms WHERE id='21')
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=21 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 1, totalUsers) FROM djmusic_rooms WHERE id='21')
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT usersinrooms.*, users.*
+			FROM djmusic_usersinrooms usersinrooms
+			INNER JOIN djmusic_users users ON usersinrooms.userId = users.user_id
+			WHERE usersinrooms.roomId=22
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : SELECT totalUsers FROM djmusic_rooms WHERE id='22'
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=22 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 0, totalUsers) FROM djmusic_rooms WHERE id='22')
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=22 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 1, totalUsers) FROM djmusic_rooms WHERE id='22')
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT usersinrooms.*, users.*
+			FROM djmusic_usersinrooms usersinrooms
+			INNER JOIN djmusic_users users ON usersinrooms.userId = users.user_id
+			WHERE usersinrooms.roomId=26
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : SELECT totalUsers FROM djmusic_rooms WHERE id='26'
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=26 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 0, totalUsers) FROM djmusic_rooms WHERE id='26')
+[128.179.157.56] at 2014-11-28 11:10:40 :: new request : 
+			SELECT playlistId 
+			FROM djmusic_usersinrooms 
+			WHERE roomId=26 AND 
+			turnInRoom IN (SELECT MOD(currentTurn + 1, totalUsers) FROM djmusic_rooms WHERE id='26')

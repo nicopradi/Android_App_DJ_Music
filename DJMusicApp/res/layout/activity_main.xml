@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ch.epfl.sweng.djmusicapptristan.MainActivity" >
+
+    <ch.epfl.sweng.djmusicapp.ui.CustomTextView
+        android:id="@+id/userNameWelcomeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textColor="#333333"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/joinRoomBtn"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:onClick="onClickJoinRoomButtonFromMainActivity"
+        android:text="@string/joinRoomButtonMainActivity"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/myMusicsBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:onClick="onClickMyMusicButtonFromMainActivity"
+        android:text="@string/musicsButtonMainActivity"
+        android:textSize="22sp" />
+
+</LinearLayout>

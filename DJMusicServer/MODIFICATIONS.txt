@@ -1,0 +1,111 @@
+20.11.14
+-db : rooms : + nextTrackId
+-getCurrentTrack=>getTrack : + nextTrack, update API
+-serverFunctions : + getTrack, + getCurrentPosition
+-getRoom(s) : + nextTrack, update API, updateTracks
+-addRoom : addUser creator, update API
+
+21.11.14
+-db : rooms : + listeningUsers
+-databaseManager : add increase/decrease
+-subscribeRoom : inscrease listeningUsers
+-unsubscribeRoom : decrease listeningUsers
+-skipTrack => ******* must update startTime in rooms => add reset in updateTracks
+-db : new table djmusic_votes
+-serverFunctions : add getTrackId + update getTrack
+- NOTE :: pour les votes, si on annule un vote, il faut rajouter ou enlever ce qu'on a fait
+-voteCurrentTrack
+
+24.11.14
+-serverFunctions : 
+	+ existingRoom, 
+	+ checkExistingRoom, 
+	+ checkIsLogged, 
+	+ isSubscribed, 
+	+ existingRoomByName,
+	+ getUsers
+-refactor : getCurrentAndNextTracks
+-refactor : voteCurrentTrack
+-refactor : skipTrack
+-refactor : subscribeRoom
+-refactor : unSubscribeRoom
+-refactor : addRoom
+-refactor : getRoom(s)
+-refactor : addTracks
+-refactor : deleteRoom
+deleteRoom : addUser
+-refactor : getUsers
+-refactor : login
+-refactor : logout
+-refactor : updateRoom
+
+---------------------------
+SPRINT 5
+
+25.11.14
+-db : usersinrooms : add privilege {1 admin, 0 normal user}
+-serverFunctions : + checkPrivileges
+++syncWithServer : api update
+-db : rooms : add status {0 public, 1 private}, password
+-addRoom : status, password sha1, api update
+-getRooms : status {0 public, 1 private, 2 both}
+-JSONManager : changed empty by "" because empty(0) = true
+-serverFunction : fix passNextTrack, reset
+-voteCurrentTrack : check is subscribed, skip if too many downvotes
+-db : votes : add roomId
+-serverFunctions
+-databaseManager : add
+-votes : limit downVotes, then skip
+-subscribeRoom : privilege 1 if creator, password if private, api
+-serverFunctions : isRoomPrivate
+
+26.11.14
+-getCANT : sync_mode, api
+-update/delete Room/skip Track : checkPrivilege, only if administrator or privilege && subscribed
+-serverFunctions : checkPrivileges
+++ removeEmptyRooms, db : +deletedRooms, _-^ need to create a CRON task when ready ^-_
+
+28.11.14
+-db add history_votes
+-voteCurrentTrack : insert in history
+-jsonManager => === pour le cas 0
+-serverFunctions : reassignTurns
+-unSubscribeRoom : reassignTurns
+-logout : don't delete playlists and tracks
+-dataBaseManager : logs in db
+-db : djmusic_logs
+++ logs
+
+1.12.14
+-getRoom(s) => room_status [ok]
+-serverFunctions => incrementTurn, updateTracks [ok]
+-unsubscribe => error if not subscribed [ok]
+-subscribeRoom => password for admin, isAdmin returned [ok]
+-serverFunctions => unsubscribe before subscribe [ok]
+
+SPRINT 6
+2.12.14
+-addTracks => check pas si doublons [ok]
+-logout => unsubscribeAllRooms [ok]
+
+3.12.14
+-continuing implementing new system
+-serverFunctions => getNextTrackId takes in account multiple cycles
+-subscribeRoom => no error if already Subscribed
+-databaseManager => fix bug with prefix table in insert and update
+
+4.12.14
+-subscribeRoom => is_admin au lieu de isAdmin, api
+
+5.12.14
+-serverFunctions => ++getDuration
+-addTracks => if null length, search on web
+
+6.12.14
+-addTracks => update playlist id even when old one
+
+9.12.14
+-voteCurrenTrack => add 2 and -2
+
+10.12.14
+-migrate to the new server

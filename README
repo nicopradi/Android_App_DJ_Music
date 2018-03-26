@@ -1,0 +1,11 @@
+Set-up to make Google+ sign-in work while debugging :
+===================
+
+Simply copy the key to your machine, in the folder "~/.android/debug.keystore" on linux typically, or "%USERPROFILE%\.android\debug.keystore" for Windows.
+
+The key can be found at the root of our repo, and is named "debug.keystore".
+
+Under Linux :
+$ cd <app root folder>
+$ cp debug.keystore ~/.android/debug.keystore
+

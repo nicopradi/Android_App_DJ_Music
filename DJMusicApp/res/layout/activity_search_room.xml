@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    android:orientation="vertical"
+    tools:context="ch.epfl.sweng.djmusicapptristan.SearchRoomActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2SearchRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/displayPublicCheckBoxSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/displayPublicCheckbox" />
+
+        <CheckBox
+            android:id="@+id/displayPrivateCheckBoxSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/displayPrivateCheckbox" />
+
+        <Spinner
+            android:id="@+id/spinnerSortSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:entries="@array/sortTypes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/searchRoomFieldSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/searchRoomFieldSearchRoomActivity"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3SearchRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBoxPopSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxPop" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRockSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxRock" />
+
+        <CheckBox
+            android:id="@+id/checkBoxClassicalSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxClassical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4SearchRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBoxMetalSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxMetal" />
+
+        <CheckBox
+            android:id="@+id/checkBoxHouseSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxHouse" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTranseSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxTranse" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5SearchRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBoxTechnoSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxTechno" />
+
+        <CheckBox
+            android:id="@+id/checkBoxElectroSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxElectro" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFolkSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxFolk" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6SearchRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBoxJazzSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxJazz" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCountrySearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxCountry" />
+
+        <CheckBox
+            android:id="@+id/checkBoxLatinoSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxLatino" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7SearchRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBoxOthersSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxOthers" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAnythingSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/checkBoxAnything" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAllSearchRoomActivity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/checkBoxAll" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8SearchRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/closeButtonSearchRoomActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClickCloseButton"
+            android:text="@string/closeButtonSearchRoomActivity" />
+    </LinearLayout>
+
+    <include layout="@layout/spinner_progress_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listViewSearchRoomActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp" />
+
+</LinearLayout>

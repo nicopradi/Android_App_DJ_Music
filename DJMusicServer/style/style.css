@@ -1,0 +1,367 @@
+/* éléments de base */
+	html
+	{
+		height:100%;
+	}
+
+	body
+	{
+		width : 1200px;
+		height : 100%;
+		margin : auto;
+		font-family : Calibri, Arial, Serif;
+		color : #1C1C1C;
+	}
+
+	header
+	{
+		height : 120px;
+		margin-top : 30px;
+		margin-bottom : 30px;
+		background-color: #1b537d;
+	}
+
+	header .logo1
+	{
+		height:80px;
+	}
+
+	header .logo2
+	{
+		height:110px;
+	}
+
+	header table
+	{
+		padding:0px 10px 0px 10px;
+	}
+
+	section
+	{
+		padding : 30px 20px 30px 20px;
+		/*max-height : 800px;*/
+		min-height : 480px;
+		overflow : auto;
+	}
+
+	footer
+	{
+		height : 120px;
+		color: white;
+		margin-top : 30px;
+		margin-bottom : 30px;
+		background-color: #999999;
+	}
+
+	footer table
+	{
+		margin:20px;
+		padding:30px
+	}
+	
+	textarea
+	{
+		font-family : Arial, Serif;
+	}
+
+/* tableaux */
+	table
+	{
+		width:100%;
+	}
+
+	table .even_row
+	{
+		background-color:#E0E0E0;
+	}
+	
+	table .medium_row td 
+	{
+		height: 30px;
+	}
+
+	table .headUp
+	{
+		background: rgb(246,248,249);
+		background: -moz-linear-gradient(top, rgba(246,248,249,1) 0%, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(245,247,249,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,248,249,1)), color-stop(50%,rgba(229,235,238,1)), color-stop(51%,rgba(215,222,227,1)), color-stop(100%,rgba(245,247,249,1)));
+		background: -webkit-linear-gradient(top, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%);
+		background: -o-linear-gradient(top, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%);
+		background: -ms-linear-gradient(top, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%);
+		background: linear-gradient(to bottom, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 );
+
+		/*font-size : 1.1em;
+		font-weight : normal;*/
+	}
+
+	table .headDown
+	{
+		background: rgb(205,210,211); /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NkZDJkMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNmY4ZjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(205,210,211,1) 0%, rgba(246,248,249,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(205,210,211,1)), color-stop(100%,rgba(246,248,249,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(205,210,211,1) 0%,rgba(246,248,249,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(205,210,211,1) 0%,rgba(246,248,249,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(205,210,211,1) 0%,rgba(246,248,249,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(205,210,211,1) 0%,rgba(246,248,249,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdd2d3', endColorstr='#f6f8f9',GradientType=0 ); /* IE6-8 */
+		
+		font-size : 1.1em;
+		font-weight : normal;
+	}
+	
+	.details_cours tr td
+	{
+		border-bottom:1px gray solid;
+		padding:10px;
+	}
+	
+	.details_cours tr th
+	{
+		border-bottom:1px gray solid;
+		padding:10px;
+		background-color:#C1C1C1;
+		text-align:left;
+	}
+	
+/* font-size */
+	.x-small
+	{
+		font-size:0.8em;
+	}
+	
+	.small
+	{
+		font-size:0.9em;
+	}
+	
+	.large
+	{
+		font-size:1.1em;
+	}
+
+	.x-large
+	{
+		font-size:1.2em;
+	}
+
+	.xx-large
+	{
+		font-size:1.3em;
+	}
+	
+	.xxx-large
+	{
+		font-size:1.5em;
+	}
+	
+	.admin_title
+	{
+		font-size:4.5em;
+		color:white;
+		vertical-align:middle;
+	}
+
+/* styles personnalisés */
+	.informations_small
+	{
+		font-size:0.8em;
+		font-style:italic;
+		color:gray;
+	}
+
+	.informations
+	{
+		font-style:italic;
+		color:gray;
+	}
+	
+	.stats_head
+	{
+		font-size:1.1em;
+	}
+
+/* liens */
+	a
+	{
+		text-decoration:none;
+		color:#4695C9;
+	}
+
+	a:hover
+	{
+		color:#104396;
+	}
+
+	a:visited
+	{
+		color:#7E12A5;
+	}
+
+/*images*/
+	img 
+	{ 
+		border: 0;
+	}
+
+	.img_xx-small
+	{
+		width:15px;
+	}
+
+	.img_x-small
+	{
+		width:20px;
+	}
+
+	.img_small
+	{
+		width:30px;
+	}
+
+	.img_medium
+	{
+		width:45px;
+	}
+
+	.img_large
+	{
+		width:100px;
+	}
+	
+	.cancel_button
+	{
+		width:40px;
+		cursor:pointer;
+	}
+	
+	.edit_button
+	{
+		width:40px;
+		cursor:pointer;
+	}
+
+/* alignement */
+	.left
+	{
+		text-align: left;
+	}
+
+	.center
+	{
+		text-align: center;
+		margin : auto;
+	}
+
+	.right
+	{
+		text-align: right;
+	}
+
+/* couleurs */
+	.success
+	{
+		color: green;
+	}
+
+	.error
+	{
+		color: red;
+	}
+
+/* font-style */
+	.italic
+	{
+		font-style: italic;
+	}
+	
+	.bold
+	{
+		font-weight: bold;
+	}
+
+/* afficher détails du cours */
+	.onglets
+	{
+		border:1px gray solid;
+		border-radius:5px 5px 0 0;
+		padding:5px;
+	}
+
+	.onglets img
+	{
+		vertical-align:middle;
+	}
+
+	.show_cours
+	{
+		text-align:justify;
+		padding:10px;
+		border:1px gray solid;
+		border-radius:0 0 5px 5px;
+	}
+
+/* boites */
+	.box_auto
+	{
+		margin:auto;
+		padding : 4px;
+		border:1px gray solid;
+		border-radius:5px;
+		/*min-height:80px;
+		width:600px;*/
+	}
+	
+	.box_small
+	{
+		margin:auto;
+		padding : 4px;
+		border:1px gray solid;
+		border-radius:5px;
+		min-height:80px;
+		width:600px;
+		text-align:center;
+	}
+
+	.box_medium
+	{
+		margin:auto;
+		padding : 6px;
+		border:1px gray solid;
+		border-radius:5px;
+		min-height:100px;
+		width:800px;
+	}
+
+	.box_large
+	{
+		margin:auto;
+		padding : 15px;
+		border:1px gray solid;
+		border-radius:5px;
+		min-height:150px;
+		width:1000px;
+	}
+	
+/* effets */
+	.rounded
+	{
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+	}
+	
+/* dataTables */
+	.hide_too_long td 
+	{
+		white-space:nowrap;
+		overflow:hidden;
+	}
+	
+/* Print */
+@media print { 
+    body {
+       width: 100%;
+    } 
+}

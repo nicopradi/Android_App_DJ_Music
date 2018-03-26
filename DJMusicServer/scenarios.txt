@@ -1,0 +1,69 @@
+scenario 1 :
+-login
+-getRooms
+-subscribeRoom
+-getCurrentTrack (initial, every 10 seconds until totalLength - 10 sec[we don't need to ask at the 10
+last seconds because we call getNextTrack at that time])
+-getNextTrack (when a song finishes)
+-unsubscribeRoom
+-logout
+
+scenario 2 :
+#user1
+-login
+-getRooms
+-addRoom
+-addTracks
+-subscribeRoom
+-getCurrentTrack
+
+#user2
+-login
+-getRooms
+-subscribeRoom
+-getCurrentTrack
+-addTracks
+-getCurrenTrack
+-unsubscribeRoom
+-logout
+
+#user1
+-logout
+
+/--------------/
+manual scenario
+-login : {
+  "user_id" : "101",
+  "user_name" : "radu"
+} [v]
+
+-addRoom : {
+  "room_name" : "room1",
+  "room_genre" : "pop"
+} [v]
+
+-getRooms : {} [v]
+
+-subscribeRoom : {
+  "user_id" : "101",
+  "room_id" : "1"
+} [v]
+
+-addTracks : {
+  "user_id" : "101",
+  "room_id" : "1",
+  "tracks" : [
+  {
+    "track_url" : "www.youtube.com/test",
+    "track_title" : "test_title",
+    "track_artist" : "test_artist",
+    "track_album" : "test_album",
+    "track_genre" : "test_genre",
+    "track_length" : "250" 
+  }
+  ]
+} [v]
+
+-getCurrentTrack : {
+  "room_id" : 1
+} [v]
