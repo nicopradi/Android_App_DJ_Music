@@ -6,6 +6,7 @@
  */
 
 
+/[command name (url)]
 =>	[sent JSON object]
 <=	[returned JSON object]
 
